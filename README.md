@@ -1,30 +1,30 @@
-# Heart Disease Risk Classification - Mini ML Project
+# Classification du Risque de Crise Cardiaque – Mini-Projet Machine Learning
 
-This mini-project focuses on building and evaluating machine learning models to classify the risk of heart disease using a medical dataset (`heart.csv`). The project demonstrates preprocessing techniques, model training, hyperparameter tuning, and performance evaluation.
+Ce mini-projet a pour objectif de développer et d’évaluer des modèles d’apprentissage automatique afin de prédire le risque de crise cardiaque à partir d’un jeu de données médicales (`heart.csv`). Il met en œuvre différentes étapes de prétraitement, d'entraînement de modèles, d’optimisation d’hyperparamètres et d’évaluation des performances.
 
-## 📁 Dataset
-The dataset contains various health metrics and the target variable indicating heart disease risk.
+## 📁 Jeu de données
+Le jeu de données contient plusieurs indicateurs médicaux ainsi qu’une variable cible indiquant la présence ou non d’une maladie cardiaque.
 
-## 🔧 Preprocessing Steps
-- **Loading & Exploration**: Inspection of dataset structure and null values.
-- **Categorical Encoding**: Label encoding for categorical features.
-- **Normalization**: Standard scaling of numerical features.
-- **Train-Test Split**: 75% training, 25% testing.
+## 🔧 Prétraitement
+- **Chargement et exploration** : Analyse des premières lignes et détection des valeurs manquantes.
+- **Encodage des variables catégorielles** : Encodage via `LabelEncoder`.
+- **Normalisation** : Mise à l’échelle des variables numériques avec `StandardScaler`.
+- **Division des données** : Séparation en ensemble d’entraînement (75 %) et de test (25 %).
 
-## 🤖 Models Implemented
-- **K-Nearest Neighbors (KNN)**: F1 score evaluated across k = 1 to 20.
-- **Multilayer Perceptron (MLP)**: Single hidden layer (100 neurons), max iterations = 1000.
-- **Support Vector Machine (SVM)**: Tested with kernels `rbf`, `poly`, `sigmoid` and hyperparameter tuning using `GridSearchCV`.
+## 🤖 Modèles utilisés
+- **K-Plus Proches Voisins (KNN)** : Évaluation du F1-score pour k allant de 1 à 20.
+- **Perceptron Multicouche (MLP)** : Une couche cachée de 100 neurones, 1000 itérations max.
+- **Support Vector Machine (SVM)** : Test avec les noyaux `rbf`, `poly`, `sigmoid` et recherche des meilleurs hyperparamètres via `GridSearchCV`.
 
-## 📊 Evaluation
-- Confusion matrix visualization
-- F1 Score as the main evaluation metric
-- SVM with RBF kernel achieved the best results.
+## 📊 Évaluation
+- Affichage de la matrice de confusion
+- Utilisation du F1-score comme métrique principale
+- Le modèle SVM avec noyau RBF a donné les meilleurs résultats.
 
 ## 📌 Conclusion
-This project deepened understanding of classification techniques and highlighted the importance of preprocessing and model selection. The SVM model proved particularly effective for this medical classification task.
+Ce projet m’a permis d’approfondir ma compréhension des techniques de classification en machine learning, en soulignant l’importance du prétraitement, du choix des modèles et de la sélection des hyperparamètres. Le SVM s’est révélé particulièrement performant dans ce contexte médical.
 
 ---
 
-**Author**: Omar Bouattour  
-**Academic Year**: 2024–2025
+**Auteur** : Omar Bouattour  
+**Année universitaire** : 2024–2025
